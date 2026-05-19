@@ -82,20 +82,40 @@
       margin-bottom: 10px;
     }
 
-    .additional-achievements {
-      margin-top: 15px;
+    .achievement-block .member-name {
+      font-size: 0.85em;
+      color: rgba(255, 255, 255, 0.5);
+      margin-top: 6px;
+      margin-bottom: 0;
     }
 
-    .additional-achievements .achievement-img {
-      display: block;
+    .img-placeholder {
       width: 100%;
-      margin: 10px 0;
+      aspect-ratio: 4/3;
+      background-color: rgba(255,255,255,0.08);
+      border: 2px dashed rgba(255,255,255,0.3);
       border-radius: 10px;
-      transition: transform 0.3s ease;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: rgba(255,255,255,0.4);
+      font-size: 0.8em;
+      margin-bottom: 15px;
     }
 
-    .additional-achievements .achievement-img:hover {
-      transform: scale(1.05);
+    .video-wrapper {
+      width: 100%;
+      aspect-ratio: 16/9;
+      border-radius: 10px;
+      overflow: hidden;
+      margin-bottom: 15px;
+    }
+
+    .video-wrapper iframe {
+      width: 100%;
+      height: 100%;
+      border: none;
+      border-radius: 10px;
     }
 
     .button-container {
@@ -128,36 +148,86 @@
     <h1>Achievements - Roto Phantoms</h1>
 
     <div class="achievement-container">
+
+      <!-- VEX IQ Best Design Award -->
+      <div class="achievement-block">
+        <b>Best Design Award — VEX IQ</b>
+        <div class="img-placeholder">Photo coming soon</div>
+        <p>Best Design Award at the VEX IQ Competition</p>
+        <p class="member-name">Roto Phantoms</p>
+      </div>
+
+      <!-- IYRC Coaching -->
+      <div class="achievement-block">
+        <b>2nd Place — IYRC Competition</b>
+        <div class="img-placeholder">Photo coming soon</div>
+        <p>Trained a school team who won 2nd Place at the IYRC Competition — now representing Oman internationally next year</p>
+        <p class="member-name">Roto Phantoms (Coaches)</p>
+      </div>
+
+      <!-- DaVinci Bot Workshop -->
+      <div class="achievement-block">
+        <b>DaVinci Bot Workshop</b>
+        <!-- Replace YOUR_VIDEO_ID with your actual YouTube video ID -->
+        <div class="video-wrapper">
+          <iframe
+            src="https://www.youtube.com/embed/YOUR_VIDEO_ID"
+            title="DaVinci Bot Workshop at Almashariq School"
+            allowfullscreen>
+          </iframe>
+        </div>
+        <p>Hosted a DaVinci Bot robotics workshop for kids at Almashariq School</p>
+        <p class="member-name">Roto Phantoms</p>
+      </div>
+
       <!-- Jood -->
       <div class="achievement-block">
-        <b>Jood AwladThani</b>
-        <img src="Jood.jpeg" alt="Jood's Achievement">
+        <b>1st Place — FIRST LEGO League Jr.</b>
+        <img src="Jood.jpeg" alt="FIRST LEGO League Achievement">
         <p>1st Place - FIRST LEGO League Jr., Amman, Jordan</p>
+        <p class="member-name">Jood AwladThani</p>
       </div>
 
-      <!-- Sura -->
+      <!-- Sura #1 -->
       <div class="achievement-block">
-        <b>Sura Ambusaidi</b>
-        <img src="Sura3.jpeg" alt="Sura's Achievement">
+        <b>2nd Place — Robotics and AI</b>
+        <img src="Sura3.jpeg" alt="Robotics and AI Achievement">
         <p>2nd Place - Robotics and AI (White and Black Cans)</p>
-        <div class="additional-achievements">
-          <img class="achievement-img" src="Sura2.png" alt="Sura's Additional Achievement">
-          <p>4th Place - Water Robot, Science Festival</p>
-        </div>
+        <p class="member-name">Sura Ambusaidi</p>
       </div>
 
-      <!-- Sheyam -->
+      <!-- Sura #2 -->
       <div class="achievement-block">
-        <b>Sheyam Al-Busaidi</b>
-        <img src="Sheyam4.jpeg" alt="Sheyam's Achievement">
-        <p>1st Place - Innovation Competition, Muscat 2024</p>
-        <div class="additional-achievements">
-          <img class="achievement-img" src="Sheyam1.jpeg" alt="Sheyam's Achievement 2">
-          <p>2nd Place - Best Future City Design in Minecraft, Sultanate 2023</p>
-          <img class="achievement-img" src="Sheyam5.jpg" alt="Sheyam's Achievement 3">
-          <p>2nd Place - Among the Talented, Sultanate 2021</p>
-        </div>
+        <b>4th Place — Water Robot</b>
+        <img src="Sura2.png" alt="Water Robot Achievement">
+        <p>4th Place - Water Robot, Science Festival</p>
+        <p class="member-name">Sura Ambusaidi</p>
       </div>
+
+      <!-- Sheyam #1 -->
+      <div class="achievement-block">
+        <b>1st Place — Innovation Competition</b>
+        <img src="Sheyam4.jpeg" alt="Innovation Competition Achievement">
+        <p>1st Place - Innovation Competition, Muscat 2024</p>
+        <p class="member-name">Sheyam Al-Busaidi</p>
+      </div>
+
+      <!-- Sheyam #2 -->
+      <div class="achievement-block">
+        <b>2nd Place — Best Future City Design</b>
+        <img src="Sheyam1.jpeg" alt="Future City Design Achievement">
+        <p>2nd Place - Best Future City Design in Minecraft, Sultanate 2023</p>
+        <p class="member-name">Sheyam Al-Busaidi</p>
+      </div>
+
+      <!-- Sheyam #3 -->
+      <div class="achievement-block">
+        <b>2nd Place — Among the Talented</b>
+        <img src="Sheyam5.jpg" alt="Among the Talented Achievement">
+        <p>2nd Place - Among the Talented, Sultanate 2021</p>
+        <p class="member-name">Sheyam Al-Busaidi</p>
+      </div>
+
     </div>
 
     <!-- Navigation Buttons -->
